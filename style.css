@@ -1,0 +1,173 @@
+/* Navigation Bar */ 
+a {
+  text-decoration: none;
+}
+
+/* Menu Styles */
+
+.fourth-level-menu {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.fourth-level-menu>li {
+  height: 30px;
+  background-color: #1b4b6d;
+}
+
+.third-level-menu {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.third-level-menu>li {
+  height: 30px;
+  background-color: #1b4b6d;
+}
+
+.third-level-menu>li:hover {
+  background: #CCCCCC;
+}
+
+.second-level-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 250px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.second-level-menu>li {
+  position: relative;
+  height: 30px;
+  background-color: #1b4b6d;
+}
+
+.second-level-menu>li:hover {
+  background: #CCCCCC;
+}
+
+.top-level-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-level-menu>li {
+  position: relative;
+  float: left;
+  height: 30px;
+  width: 250px;
+  background-color: #1b4b6d;
+  font-size:20pt;
+}
+
+.top-level-menu>li:hover {
+  background: #CCCCCC;
+}
+
+.top-level-menu li:hover>ul {
+  /* On hover, display the next level's menu */
+  display: inline;
+}
+
+/* Menu Link Styles */
+
+.top-level-menu a
+/* Apply to all links inside the multi-level menu */
+
+  {
+  font: bold 16pt Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 0 0 10px;
+  /* Make the link cover the entire list item-container */
+  display: block;
+  line-height: 30px;
+  margin-left:10pt;
+  margin-right:10pt;
+}
+
+.top-level-menu a:hover {
+  color: #000000;
+}
+
+
+/* Other CSS */
+.hidden {
+	text-decoration:none;
+}
+
+body {
+	background-color:#eee;
+}
+
+.header1 {
+	background-color: #1f567d;
+    text-align: center;
+    padding: 30pt;
+}
+
+.site-title {
+    color:white;
+    font-size: 30px;
+    text-transform: uppercase;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-weight: 800;
+	text-decoration:none;
+}
+
+.site-description {
+    margin: 0 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Gentium Basic",Georgia,"Times New Roman",Times,serif;
+    font-style: italic;
+} 
+
+.header2 {
+    background: #1b4b6d;
+    text-align: center;
+    padding:5pt;
+	text-align:center;
+}
+
+.primary {
+	width:55%;
+	background-color:white;
+	padding:5pt;
+	padding-left:12pt;
+	border-radius:15pt;
+	margin:15pt;
+}
+
+.secondary {
+	float:right;
+}
+
+.footer-bar {
+	color:#1f567d;
+	background-color:#1f567d;
+}
+
+footer {
+	background-color: #ccc;
+	padding:15pt;
+	text-align:center;
+}
