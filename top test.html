@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#topbtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topbtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+
+<div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+<div style="background-color:lightgrey;padding:30px 30px 2500px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac posuere leo. Cras commodo iaculis urna, nec consequat ex cursus sit amet. Etiam laoreet rutrum purus at condimentum. Vivamus a elit diam. Pellentesque efficitur fermentum leo, quis auctor felis feugiat eu. Etiam id quam ac enim blandit gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent at faucibus neque.
+
+Morbi pulvinar efficitur diam. Aenean ultricies rutrum interdum. Quisque vestibulum mollis nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas libero nulla, rutrum nec fringilla eu, dictum vel velit. In hac habitasse platea dictumst. Phasellus in pharetra urna. Nullam condimentum elementum lectus non placerat. Nam gravida, quam nec porttitor pharetra, felis nibh sodales nisl, hendrerit feugiat justo purus eget arcu. Duis pulvinar mauris sapien, sed porttitor mauris hendrerit et. Suspendisse ex dui, imperdiet id massa accumsan, eleifend tincidunt lacus. Sed accumsan tincidunt nunc vitae bibendum. Nunc varius accumsan nisi, eu condimentum magna pulvinar ut. Nunc at faucibus est. Cras non maximus dolor.
+
+Duis nec finibus sem. Maecenas purus lorem, fringilla sed mollis aliquam, scelerisque at sem. In luctus ut lacus a blandit. Etiam mollis tincidunt lacus quis iaculis. Aenean a ipsum imperdiet, convallis justo id, elementum mauris. Vestibulum pellentesque massa neque, ut accumsan lorem placerat quis. Nam fringilla sapien aliquet ante vulputate, non mattis ante vehicula. Phasellus ornare accumsan felis eu hendrerit. Suspendisse et odio felis. Proin dapibus ipsum sed nisi molestie, in ullamcorper quam volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus magna massa, molestie et nibh quis, sodales ultricies elit. Nulla facilisi.
+
+Donec et lectus id odio sollicitudin fringilla. Nam sodales metus efficitur risus laoreet, sit amet commodo tortor facilisis. Phasellus ut elementum tellus, non pretium tortor. Morbi eget turpis convallis, feugiat nibh nec, gravida nisl. Sed at laoreet leo, eget vehicula diam. Etiam nec finibus sapien. Integer maximus, felis eget interdum bibendum, tortor urna ornare lacus, ac maximus lectus ante non tortor. Quisque suscipit dolor dui, id bibendum lacus tempor at. Nullam vulputate, purus id consectetur maximus, felis massa vehicula tortor, tincidunt tincidunt felis ipsum bibendum dolor. Vestibulum a hendrerit odio. Pellentesque porttitor sapien vel vestibulum elementum.
+
+Ut tincidunt mi sit amet commodo egestas. Maecenas blandit eleifend rutrum. Donec vitae tincidunt nibh, ac sagittis tortor. Pellentesque lacinia consectetur consectetur. Suspendisse potenti. Nullam id eros at elit varius feugiat ac sed sapien. Proin nulla nulla, pharetra vel magna a, vulputate interdum nibh. Etiam sed diam auctor, gravida lacus at, consectetur ipsum. Morbi augue urna, dapibus id libero nec, tincidunt maximus nunc. Aliquam erat volutpat. Mauris auctor ornare orci ac volutpat. Phasellus sit amet congue lacus.</div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topbtn").style.display = "block";
+  } else {
+    document.getElementById("topbtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

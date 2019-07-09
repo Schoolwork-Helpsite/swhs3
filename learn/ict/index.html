@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="http://127.0.0.1:8080/swhs-web/css/style.css" type="text/css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/swhs-web/subjects.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="http://127.0.0.1:8080/swhs-web/icon.jpg">
+    <title>Computer Science | School Work Help Site | The Essential Website for Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+    td {
+        vertical-align: middle;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+
+    <div class="header1">
+        <a href="http://127.0.0.1:8080/swhs-web/index.html" class="hidden">
+            <img src="http://127.0.0.1:8080/swhs-web/logo.jpg">
+            <h1 class="site-title" class="hidden">SCHOOLWORK HELPSITE</h1>
+            <p class="site-description">The Essential Website for Learning</p>
+        </a>
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td style="width:75%">
+                <div class="primary">
+                    <div class="article">
+                        Go back to
+                        <a href="http://127.0.0.1:8080/swhs-web/" class="path">
+                            <i class="fa fa-home" style="font-size:20px"> Home</i></a>
+                            <i class="fa fa-angle-right" style="font-size:20px"></i>
+                            <a href="http://127.0.0.1:8080/swhs-web/learn"><i class="fa fa-book" style="font-size:20px"> Learn</i></a>
+                        </div>
+                        <br>
+                        <div class="article">
+                            <h2>Computer Science</h2>
+                            I have choosen to split this into three aspects: Hardware, Networks and Software.
+                            <heading1>Hardware</heading1>
+                            <heading2>CPU</heading2>
+
+                            <heading1>Networks</heading1>
+                            <heading2>Network Protocols</heading2>
+                            <heading3>TCP/IP</heading3>
+                            <p>TCP/IP is not a protocol. It is a collection of protocols named after the two most important ones in it. </p>
+
+                            <p>The TCP layer handles the message. The message is broken down into packets which is sent over the internet. The packets are received by the receiving computer and are reassembled into the original by it’s TCP layer.</p>
+
+
+                            <p>The IP layer is primarily used to transmit the message. This is done by assigning an IP address to every device in the network.
+                            </p>
+
+                            <heading3>The TCP/IP model vs The OSI model</heading3>
+                            <table style="border:solid black 1pt">
+                                <th>The OSI 7-layer model</th>
+                                <th>The TCP/IP model</th>
+                                <tr>
+                                    <td>Application</td>
+                                    <td rowspan="2">Application</td>
+                                </tr>
+                                <tr>
+                                    <td>Presentation</td>
+                                </tr>
+                                <tr>
+                                    <td>Session</td>
+                                    <td rowspan="2">Transport</td>
+                                </tr>
+                                <tr>
+                                    <td>Transport</td>
+                                </tr>
+                                <tr>
+                                    <td>Network</td>
+                                    <td>Network</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Link</td>
+                                    <td rowspan="2">Physical</td>
+                                </tr>
+                                <tr>
+                                    <td>Physical</td>
+                                </tr>
+                            </table>
+                            <heading3>How email works:</heading3>
+                            <ol>
+                                <LI>The sender writes and email using an email client on their computer such as Gmail or Yahoo</li>
+                                    <li>When the email is sent, the email is uploaded to the SMTP (Simple Mail Transfer Protocol) server as outgoing mail.</li>
+                                    <li>All messages wait in a queue while the server communicates with the DNS (Domain Name Server) to find where to send the email.
+                                        <ol type="A">
+                                            <li>If the address can not be found, sender will receive a mail failure message. 	OR </li>
+                                            <li>If the address is found, the message and attachments are transferred.</li>
+                                        </ol>
+                                    </ol>
+                                    <heading3>POP &amp IMAP</heading3>
+                                    <p>POP (Post Office Protocol) allows all messages on the server to be downloaded to the device so that the server does not run out of space. However, that means that it is hard to view the same email on different devices. Also if you delete a message on your computer, it may not delete on your phone.
+</p>
+<p>IMAP however is bidirectional so all messages are synchronised on all logged in devices because it is stored on the server. This is perfect for clients, but this method means that email providers may need many servers to handle requests and store the emails.
+</p>
+                                    <br>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="width:15%">
+                            <div class="secondary widget-area" role="complementary">
+                                <widget-title>Looking for info...</widget-title>
+                                <form id="frmSearch" class="search2" method="get" action="default.html" />
+                                <input class="search2" id="txtSearch" type="text" name="serach_bar" size="auto" maxlength="255" value="" style="left: 396px; top: 153px; width: auto; height: 26px;" placeholder="SEARCH">
+                                <input disabled class="search1" type="submit" name="submition" value="Search" style=" padding-bottom:20px; left: 69px; top: 153px; height: 23px">
+                                <input class="search2" type="hidden" name="sitesearch" value="default.html" style="padding:1pt;">
+                            </div>
+                            <hr>
+                        </td>
+                    </tr>
+                </table>
+
+                <br/><br/>
+                <div class="footer-bar" style="font-size:1pt">swhs
+                </div class="footer-bar">
+                <footer>
+                    <table style="width:100%">
+                        <td style="width:33%">©2019</td>
+                        <td style="width:33%; text-align:center;">A website powered by Sprouse Websites</td>
+                        <td style="width:33%; text-align:right;"></td>
+                    </table>
+                </footer>
+
+                <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("topbtn").style.display = "block";
+                    } else {
+                        document.getElementById("topbtn").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+                </script>
+            </body>
+            </html>

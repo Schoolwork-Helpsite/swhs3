@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="http://127.0.0.1:8080/swhs-web/css/style.css" type="text/css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/swhs-web/subjects.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="http://127.0.0.1:8080/swhs-web/icon.jpg">
+    <title>English | School Work Help Site | The Essential Website for Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+
+    <div class="header1">
+        <a href="http://127.0.0.1:8080/swhs-web/index.html" class="hidden">
+            <img src="http://127.0.0.1:8080/swhs-web/logo.jpg">
+            <h1 class="site-title" class="hidden">SCHOOLWORK HELPSITE</h1>
+            <p class="site-description">The Essential Website for Learning</p>
+        </a>
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td style="width:75%">
+                <div class="primary">
+                    <div class="article">
+                        Go back to
+                        <a href="http://127.0.0.1:8080/swhs-web/" class="path">
+                            <i class="fa fa-home" style="font-size:20px"> Home</i></a>
+                            <i class="fa fa-angle-right" style="font-size:20px"></i>
+                            <a href="http://127.0.0.1:8080/swhs-web/learn"><i class="fa fa-book" style="font-size:20px"> Learn</i></a>
+                        </div>
+                        <br>
+                        <div class="article">
+                            <h2>English</h2>
+                            <p>Please select one of the topics below:</p>
+
+                            <a class="hidden" href="http://127.0.0.1:8080/swhs-web/learn/english/language"><button class="topic">Language</button></a>
+                            <a class="hidden" href="http://127.0.0.1:8080/swhs-web/learn/english/literature"><button class="topic">Literature</button></a>
+
+
+                            <p></p>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td style="width:15%">
+                    <div class="secondary widget-area" role="complementary">
+                        <widget-title>Looking for info...</widget-title>
+                        <form id="frmSearch" class="search2" method="get" action="default.html" />
+                        <input class="search2" id="txtSearch" type="text" name="serach_bar" size="auto" maxlength="255" value="" style="left: 396px; top: 153px; width: auto; height: 26px;" placeholder="SEARCH">
+                        <input disabled class="search1" type="submit" name="submition" value="Search" style=" padding-bottom:20px; left: 69px; top: 153px; height: 23px">
+                        <input class="search2" type="hidden" name="sitesearch" value="default.html" style="padding:1pt;">
+                    </div>
+                    <hr>
+                </td>
+            </tr>
+        </table>
+
+        <br/><br/>
+        <div class="footer-bar" style="font-size:1pt">h</div class="footer-bar">
+            <footer><table style="width:100%"><td style="width:33%">©2019</td><td style="width:33%; text-align:center;">A website powered by Sprouse Websites</td><td style="width:33%; text-align:right;"></td></table></footer>
+
+            <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("topbtn").style.display = "block";
+                } else {
+                    document.getElementById("topbtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            </script>
+        </body>
+        </html>

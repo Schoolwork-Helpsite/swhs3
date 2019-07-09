@@ -1,0 +1,267 @@
+/*Go to Top Button*/
+
+#topbtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topbtn:hover {
+  background-color: #555;
+}
+
+/*Miscinalius CSS*/
+
+.right {
+  text-align: right;
+  display: inline;
+}
+
+.bordered {
+    border-width: thin;
+    border-color: black;
+    border: style;
+}
+
+center {
+  text-align: center;
+  display: inline;
+}
+
+/* Navigation Bar */
+
+a {
+  text-decoration: none;
+}
+
+/* Menu Styles */
+
+.fourth-level-menu {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.fourth-level-menu>li {
+  height: 30px;
+  background-color: #1b4b6d;
+}
+
+.third-level-menu {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.third-level-menu>li {
+  height: 30px;
+  background-color: #1b4b6d;
+}
+
+.third-level-menu>li:hover {
+  background: #CCCCCC;
+}
+
+.second-level-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 250px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.second-level-menu>li {
+  position: relative;
+  height: 30px;
+  background-color: #1b4b6d;
+}
+
+.second-level-menu>li:hover {
+  background: #CCCCCC;
+}
+
+.top-level-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-level-menu>li {
+  position: relative;
+  float: left;
+  height: 30px;
+  width: 250px;
+  background-color: #1b4b6d;
+  font-size: 20pt;
+}
+
+.top-level-menu>li:hover {
+  background: #CCCCCC;
+}
+
+.top-level-menu li:hover>ul {
+  /* On hover, display the next level's menu */
+  display: inline;
+}
+
+/* Menu Link Styles */
+
+.top-level-menu a
+/* Apply to all links inside the multi-level menu */
+
+  {
+  font: bold 16pt Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 0 0 10px;
+  /* Make the link cover the entire list item-container */
+  display: block;
+  line-height: 30px;
+  margin-left: 10pt;
+  margin-right: 10pt;
+}
+
+.top-level-menu a:hover {
+  color: #000000;
+}
+
+/* Table */
+table.show {
+    border: 1pt solid black;
+    border-collapse: collapse;
+}
+
+td.show, th.show {
+    border: solid black 1pt;
+}
+
+/* Headings */
+
+heading1 {
+    display:block;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18pt;
+    color: #009;
+}
+
+heading2 {
+    display:block;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17pt;
+    color: #00c;
+}
+
+heading3 {
+    display:block;
+    font-weight: bold;
+    font-size: 17pt;
+    color: #00d;
+}
+
+/* Other CSS */
+
+.hidden {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #eee;
+}
+
+.header1 {
+  background-color: #1f567d;
+  text-align: center;
+  padding: 25pt;
+}
+
+.site-title {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-description {
+  margin: 0 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Gentium Basic", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.header2 {
+  background: #1b4b6d;
+  text-align: center;
+  padding: 5pt;
+}
+
+tbody {
+  vertical-align: top;
+}
+
+.primary {
+  width: 93%;
+}
+
+.article {
+  background-color: white;
+  border-radius: 15pt;
+  padding: 5pt;
+  padding-left: 12pt;
+  margin: 3pt;
+}
+
+a.path {
+  background-color: #fefefe;
+}
+
+h2 {
+  color: #283d4b;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.secondary {
+  float: right;
+}
+
+.footer-bar {
+  color: #1f567d;
+  background-color: #1f567d;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 5pt;
+  font-size: 8pt;
+}

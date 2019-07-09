@@ -1,0 +1,15 @@
+a.contents :visited {
+    color: blue;
+}
+
+a.contents {
+    display: block;
+}
+
+.contents1 {
+    font-size: 23pt;
+}
+
+contents {
+    border: 2pt solid grey;
+}
