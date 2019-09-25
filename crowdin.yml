@@ -1,3 +1,10 @@
-files:
-  - source: language.json
-    translation: '%two_letters_code%/%original_file_name%'
+"project_identifier": "your-project-identifier"
+"api_key": "e6b5f82fb4dc9e00a00f1ac33716fad3626c1489"                                   #can be found in your project settings page
+"base_path": "/home/office/source-code"
+
+"files": [
+  {
+    "source" : "/resources/en/*.json",                                          #source files filter
+    "translation" : "/resources/%two_letters_code%/%original_file_name%"        #where translations are stored
+  }
+]
